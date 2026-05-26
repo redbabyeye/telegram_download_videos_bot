@@ -14,12 +14,7 @@
 - экспорт пользователей в CSV;
 - бан / разбан пользователей.
 
-## Главное про токен
 
-Никогда не вставляй токен в `bot.py` и не загружай `.env` в GitHub.
-
-Если токен уже был в публичном GitHub, перевыпусти его в BotFather:
-`/mybots` → нужный бот → `API Token` → `Revoke current token`.
 
 ## Локальный запуск
 
@@ -41,21 +36,7 @@ copy .env.example .env
 python bot.py
 ```
 
-В `.env` вставь:
 
-```env
-BOT_TOKEN=твой_токен
-ADMIN_IDS=твой_telegram_user_id
-```
-
-## Деплой на бесплатный сервер через Koyeb
-
-1. Создай GitHub-репозиторий.
-2. Загрузи туда файлы проекта, кроме `.env`, `bot.db`, `cookies.txt`.
-3. Koyeb → Create App → GitHub → выбери репозиторий.
-4. Builder: Dockerfile.
-5. Port: 8080.
-6. Environment Variables:
 
 ```env
 BOT_TOKEN=твой_токен
@@ -65,7 +46,6 @@ WORKERS=2
 DB_PATH=bot.db
 ```
 
-7. Deploy.
 
 ## Админ-команды
 
